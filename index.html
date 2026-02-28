@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0 ;
+         padding:20px;
+         margin:0;
+        }
+         
+        h1{
+            text-align: center;
+            color:#333;
+        }
+
+        .gallery{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+            grid-auto-rows:200px;
+            grid-auto-flow:dense;
+            gap:15px;
+            max-width:1200px;
+            margin:0 auto;
+        }
+
+        .item{
+            background-color: #ddd;
+            border-radius:8px;
+            overflow:hidden;
+            box-shadow:0 4px 6px rgba(0,0,0,0.1);
+            transition:transform 0.2s;
+        }  
+
+        .item:hover{
+            transform: scale(1.02);
+        }
+
+        .item img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            display:block;
+        }
+
+
+        .wide{
+            grid-column:span 2;
+        }
+
+        .tall{
+            grid-row:span 2;
+        }
+
+        .big{
+            grid-column:span 2;
+            grid-row:span 2;
+        }
+    </style>
+</head>
+<body>
+    <h1> My Gallery </h1>
+    <div class="gallery"> 
+        <div class="item"><img src=https://i0.wp.com/picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg?w=2210&quality=70 alt=photo></div>
+
+        <div class="item tall"> <img src=https://static.vecteezy.com/system/resources/thumbnails/036/184/847/small_2x/ai-generated-nature-landscapes-background-free-photo.jpg alt=photo></div>
+
+        <div class="item" > <img src=https://thumbs.dreamstime.com/z/kashmir-natural-beauty-world-s-most-beautiful-tourist-destination-famous-its-275706918.jpg alt=photo></div>
+        <div class="item"> <img src=https://cdn.pixabay.com/photo/2022/09/27/19/46/ai-generated-7483596_960_720.jpg alt=photo></div>
+        <div class ="item wide"> <img src=https://static.vecteezy.com/system/resources/previews/013/951/373/large_2x/awesome-nature-landscape-beautiful-scene-with-high-tatra-mountain-peaks-stones-in-mountain-lake-calm-lake-water-reflection-colorful-sunset-sky-amazing-nature-background-autumn-adventure-hiking-photo.jpg alt=photo></div>
+        <div class="item"> <img src=https://wallup.net/wp-content/uploads/2015/12/74165-nature-HDR-river-trees-mountain-landscape.jpg alt=photo></div>
+        <div class="item"> <img src=https://picjumbo.com/wp-content/uploads/beautiful-nature-scenery-free-photo-2210x1473.jpg alt=photo></div>
+        
+        <div class="item"> <img src=https://tse4.mm.bing.net/th/id/OIP.czcJFETVgIG_sKFDhlwMrAHaEo?pid=Api&P=0&h=220 alt=photo></div>
+
+        <div class="item big"> <img src=http://getwallpapers.com/wallpaper/full/4/a/4/821282-new-full-hd-nature-wallpapers-1920x1280-mac.jpg alt=photo></div>
+
+        <div class="item"> <img src=https://wallpapercave.com/wp/wp4700271.jpg alt=photo></div>
+        <div class="item"> <img src=https://www.10wallpaper.com/wallpaper/2880x1800/1802/Colorado_summer_jungle_hills_river_fog_2880x1800.jpg alt=photo></div>
+
+         <div class="item tall"> <img src=https://wallpaperaccess.com/full/31201.jpg alt=photo ></div>
+
+        <div class="item"> <img src=https://wallpaperaccess.com/full/255965.jpg alt=photo></div>
+         <div class="item"> <img src=https://tse1.mm.bing.net/th/id/OIP.CF3qxticF_-k2Af04uKBcQHaES?pid=Api&P=0&h=220 alt=photo></div>
+         <div class="item"> <img src=https://tse3.mm.bing.net/th/id/OIP.vRTa8QPzCxuSovr9iod5NwHaFN?pid=Api&P=0&h=220 alt=photo></div>
+         <div class="item"><img src= https://tse1.mm.bing.net/th/id/OIP.LYIoMKpKHdv-PyYphjKSgwHaEo?pid=Api&P=0&h=220 alt="photo"></div>
+         <div class="item wide"> <img src=https://tse1.mm.bing.net/th/id/OIP.5iUjsqgi2Zi-s29g434a6QHaE5?pid=Api&P=0&h=220 alt=photo></div>
+    </div>
+</body>
+</html>
